@@ -1,0 +1,507 @@
+Structure du fichier H5DF constituant la granule GEDI  :
+['BEAM0000', 'BEAM0001', 'BEAM0010', 'BEAM0011', 'BEAM0101', 'BEAM0110', 'BEAM1000', 'BEAM1011', 'METADATA']
+
+===========================================================================
+Granule METADATA : GEDI01_B_2019120102849_O02152_T03735_02_005_01_seg3
+===========================================================================
+PGEVersion : 005
+VersionID : 01
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2021-01-20T20:54:23.581698Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2019120102849_O02152_T03735_02_005_01_seg3.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 5b518f7b-5c56-442c-83c0-63df9ac61f24
+===========================================================================
+Granule METADATA : GEDI01_B_2019275135608_O04560_T00655_02_005_01_seg2
+===========================================================================
+PGEVersion : 005
+VersionID : 01
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2021-01-26T21:18:18.088124Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2019275135608_O04560_T00655_02_005_01_seg2.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 389a3483-cbc9-480a-8154-3ac7982635ce
+===========================================================================
+Granule METADATA : GEDI01_B_2020075203117_O07123_T02078_02_005_01_seg2
+===========================================================================
+PGEVersion : 005
+VersionID : 01
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2021-03-17T18:58:50.224308Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2020075203117_O07123_T02078_02_005_01_seg2.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : f0e4e774-ac48-4f42-8e39-830186f94cf3
+===========================================================================
+Granule METADATA : GEDI01_B_2020160175757_O08439_T00889_02_005_01_seg3
+===========================================================================
+PGEVersion : 005
+VersionID : 01
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2021-04-27T03:08:31.571161Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2020160175757_O08439_T00889_02_005_01_seg3.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : f93f00d1-8292-434e-a27a-918a90449b83
+===========================================================================
+Granule METADATA : GEDI01_B_2020350075741_O11378_02_T10616_02_005_02_V002
+===========================================================================
+PGEVersion : 005
+VersionID : 02
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2021-06-27T18:01:22.669973Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2020350075741_O11378_02_T10616_02_005_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 1ec9f032-eb8a-46c7-a8d8-907422c4de1b
+===========================================================================
+Granule METADATA : GEDI01_B_2020354062359_O11439_02_T07770_02_005_02_V002
+===========================================================================
+PGEVersion : 005
+VersionID : 02
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2021-06-27T18:22:30.344507Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2020354062359_O11439_02_T07770_02_005_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : f921d502-ee41-4e8a-85c4-04fdedce3a3b
+===========================================================================
+Granule METADATA : GEDI01_B_2020366014236_O11622_02_T10769_02_005_02_V002
+===========================================================================
+PGEVersion : 005
+VersionID : 02
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2021-07-03T13:33:25.183047Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2020366014236_O11622_02_T10769_02_005_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : bb9892c8-9e0a-4903-b481-7acf974e5956
+===========================================================================
+Granule METADATA : GEDI01_B_2021022000344_O11962_03_T06581_02_005_02_V002
+===========================================================================
+PGEVersion : 005
+VersionID : 02
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2021-07-03T16:56:12.306286Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2021022000344_O11962_03_T06581_02_005_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : ee602404-734b-4e29-af76-2b074225b785
+===========================================================================
+Granule METADATA : GEDI01_B_2021035114122_O12171_02_T00655_02_005_02_V002
+===========================================================================
+PGEVersion : 005
+VersionID : 02
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2021-07-03T18:23:03.775050Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2021035114122_O12171_02_T00655_02_005_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : c07c0d56-f6c8-4f5d-a90d-0f1e86290159
+===========================================================================
+Granule METADATA : GEDI01_B_2021039100834_O12232_02_T07770_02_005_02_V002
+===========================================================================
+PGEVersion : 005
+VersionID : 02
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2021-07-03T18:53:50.120319Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2021039100834_O12232_02_T07770_02_005_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : dd0550de-3177-4305-8c11-c9ce90843f8c
+===========================================================================
+Granule METADATA : GEDI01_B_2021043083548_O12293_02_T10616_02_005_02_V002
+===========================================================================
+PGEVersion : 005
+VersionID : 02
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2021-07-03T19:18:07.709660Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2021043083548_O12293_02_T10616_02_005_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 737c975c-80d8-4133-9591-9a1a4480c1cd
+===========================================================================
+Granule METADATA : GEDI01_B_2021189223722_O14565_02_T06347_02_005_02_V002
+===========================================================================
+PGEVersion : 005
+VersionID : 02
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2021-10-28T14:54:16.066648Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2021189223722_O14565_02_T06347_02_005_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : be2fc237-8d10-4451-bbe1-f3ee468879e0
+===========================================================================
+Granule METADATA : GEDI01_B_2021333135151_O16791_02_T09040_02_005_02_V002
+===========================================================================
+PGEVersion : 005
+VersionID : 02
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2022-03-16T17:37:01.039758Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2021333135151_O16791_02_T09040_02_005_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 98a51d1c-a6b7-484c-969c-6178e2eef340
+===========================================================================
+Granule METADATA : GEDI01_B_2022006055803_O17375_03_T09427_02_005_02_V002
+===========================================================================
+PGEVersion : 005
+VersionID : 02
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2022-03-21T15:56:46.109375Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2022006055803_O17375_03_T09427_02_005_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 61edc8ed-d0de-40a4-803f-270b987c8170
+===========================================================================
+Granule METADATA : GEDI01_B_2022248225019_O21139_02_T07923_02_005_02_V002
+===========================================================================
+PGEVersion : 005
+VersionID : 02
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2023-02-04T17:17:32.267457Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2022248225019_O21139_02_T07923_02_005_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 4414512a-e82b-40d7-b271-fbf5955fbcf3
+===========================================================================
+Granule METADATA : GEDI01_B_2022271135357_O21490_02_T09040_02_005_02_V002
+===========================================================================
+PGEVersion : 005
+VersionID : 02
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2023-02-04T19:17:07.706804Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2022271135357_O21490_02_T09040_02_005_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 939d0438-e015-4bf9-98d1-d1a7d47a8ca3
+===========================================================================
+Granule METADATA : GEDI01_B_2022340103703_O22558_02_T02231_02_005_02_V002
+===========================================================================
+PGEVersion : 005
+VersionID : 02
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2023-03-07T15:53:18.969352Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2022340103703_O22558_02_T02231_02_005_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 73413fdc-3ea2-467b-9d1a-422fca471827
+===========================================================================
+Granule METADATA : GEDI01_B_2023012030848_O23127_03_T02312_02_005_02_V002
+===========================================================================
+PGEVersion : 005
+VersionID : 02
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2023-04-17T14:35:45.580670Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2023012030848_O23127_03_T02312_02_005_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 557ccdf6-3e9d-4ce8-b047-51d0f1d83ce0
+===========================================================================
+Granule METADATA : GEDI01_B_2023036102732_O23504_02_T07923_02_005_02_V002
+===========================================================================
+PGEVersion : 005
+VersionID : 02
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2023-04-17T17:11:30.587728Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2023036102732_O23504_02_T07923_02_005_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 1440a6c0-5481-4ee8-8c8c-ff8dd16e3d4d
+===========================================================================
+Granule METADATA : GEDI01_B_2024193193707_O31606_T10769_02_006_03_seg2
+===========================================================================
+PGEVersion : 006
+VersionID : 03
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2024-12-16T22:09:30.902402Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2024193193707_O31606_T10769_02_006_03_seg2.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 06441405-47b4-456f-be48-68f6d2ec3eb3
+===========================================================================
+Granule METADATA : GEDI01_B_2024224073223_O32079_T05077_02_006_03_seg2
+===========================================================================
+PGEVersion : 006
+VersionID : 03
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2024-12-17T00:19:06.826911Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2024224073223_O32079_T05077_02_006_03_seg2.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 567e349f-cf8f-4d75-b8ba-fa80a371b669
+===========================================================================
+Granule METADATA : GEDI01_B_2024226134154_O32114_T10850_02_006_03_seg3
+===========================================================================
+PGEVersion : 006
+VersionID : 03
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2024-12-16T23:47:47.698609Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2024226134154_O32114_T10850_02_006_03_seg3.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 46ebb67c-a49c-413c-82ae-c82d55d4078e
+===========================================================================
+Granule METADATA : GEDI01_B_2024307054530_O33365_03_T08004_02_006_02_V002
+===========================================================================
+PGEVersion : 006
+VersionID : 02
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2025-01-12T19:53:06.784132Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2024307054530_O33365_03_T08004_02_006_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : cbc9e5d1-8c31-44dc-8444-8c802f6572e3
+===========================================================================
+Granule METADATA : GEDI01_B_2025036090232_O34841_02_T02078_02_006_02_V002
+===========================================================================
+PGEVersion : 006
+VersionID : 02
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2025-06-27T13:17:19.003391Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2025036090232_O34841_02_T02078_02_006_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 03b3f753-97da-49a9-99a2-468a2bddc43a
+===========================================================================
+Granule METADATA : GEDI01_B_2025117010605_O36092_02_T10616_02_006_02_V002
+===========================================================================
+PGEVersion : 006
+VersionID : 02
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2025-11-20T14:26:30.911446Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2025117010605_O36092_02_T10616_02_006_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 6b06bc9b-0dcd-4ca5-b306-db98006fae3b
+===========================================================================
+Granule METADATA : GEDI01_B_2025120233143_O36153_02_T09193_02_006_02_V002
+===========================================================================
+PGEVersion : 006
+VersionID : 02
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2025-11-20T14:37:40.382327Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2025120233143_O36153_02_T09193_02_006_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : c3b01057-07c9-4b6a-9cc8-dc13bc081940
+===========================================================================
+Granule METADATA : GEDI01_B_2025131023353_O36310_03_T06581_02_006_02_V002
+===========================================================================
+PGEVersion : 006
+VersionID : 02
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2025-11-20T14:58:24.458398Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2025131023353_O36310_03_T06581_02_006_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 48ce74d6-9314-415e-8de2-62247100e5a7
+===========================================================================
+Granule METADATA : GEDI01_B_2025163064814_O36809_02_T04924_02_006_02_V002
+===========================================================================
+PGEVersion : 006
+VersionID : 02
+abstract : The GEDI L1A and L1B standard data product contains precise latitude, longitude, and height above the reference ellipsoid of the laser shot received bounce point for all laser shots.  Geophysical corrections are applied to the surface return values for each laser shot.  Geophysical corrections, atmospheric corrections, and the surface types are provided for each laser shot.
+characterSet : utf8
+creationDate : 2025-12-16T13:41:07.447055Z
+credit : The software that generates the L1B product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.
+fileName : GEDI01_B_2025163064814_O36809_02_T04924_02_006_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System
+purpose : The purpose of the L1B dataset is to provide geolocated waveforms and supporting datasets for each laser shot for all eight GEDI beams.  This includes corrected and smoothed waveforms, geolocation parameters, and geophysical corrections.
+shortName : GEDI_L1B
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 8e845749-94f1-4cd0-97d7-bc8633ca10ab

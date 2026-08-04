@@ -1,0 +1,10 @@
+# pixi environments
+.pixi/*
+!.pixi/config.toml
+.vscode
+__pycache__
+
+# file extension
+*.geojson
+*.h5
+*.gpkg

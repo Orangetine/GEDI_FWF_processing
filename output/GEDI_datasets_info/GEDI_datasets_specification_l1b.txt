@@ -1,0 +1,103 @@
+GEDI01_B Datasets Description (86 datasets per beam)
+
+rxwaveform est le tableau qui contient les waveforms
+Ce n'est pas un tableau bien rangé (n_shots, n_samples)
+Mais un tableau 1D qui contient bout à bout tous les échantillons 
+de tous les shots du beam à la suite.
+rxwaveform = [ shot1_ech1, shot1_ech2, ..., shot1_echN1,
+				shot2_ech1, shot2_ech2, ..., shot2_echN2,
+				shot3_ech1, ..., shot3_echN3, ... ]
+Chaque shots sur le terrain n'a pas le même nombre d'échantillons.
+Un shot sur terrain plat de peu de végétation a une fenêtre d'enregistrement courte,
+un shot sur relief accidenté avec canopée dense a une fenêtre bien plus longue.
+
+=====================
+Attributs'description
+=====================
+
+all_samples_sum => Sum of all values within the 10 km range window.
+ancillary/master_time_epoch => Number of GPS seconds between the GPS epoch (1980-01-06T00:00:00Z) and the GEDI epoch (2018-01-01T00:00:00Z). Add this value to delta_time parameters to compute full GPS seconds (relative to the GPS epoch) for each data point.
+ancillary/mean_samples => Averaging window (shots) for non-repeated odd-even measurements from housekeeping.
+ancillary/smoothing_width => The 1-sigma width (nsec) of the gaussian kernel used to smooth the corrected waveform.
+beam => Beam number (0-11).
+channel => Channel number (0-7).
+geolocation/altitude_instrument => Height of the instrument diffractive optical element (DOE) above the WGS84 ellipsoid.
+geolocation/altitude_instrument_error => Error on altitude_instrument.
+geolocation/bounce_time_offset_bin0 => The difference between the transmit time and the time at the start of the RX window
+geolocation/bounce_time_offset_bin0_error => Error on bounce_time_offset_bin0.
+geolocation/bounce_time_offset_lastbin => The difference between the transmit time and the time at the end of the RX window
+geolocation/bounce_time_offset_lastbin_error => Error on bounce_time_offset_lastbin.
+geolocation/degrade => Non-zero values indicate the shot occured during a degraded period.  A non-zero tens digit indicates degraded attitude, a non-zero ones digit indicates a degraded trajectory.  3X=ADF CHU solution unavailable (ST-2); 4X=Platform attitude; 5X=Poor solution (filter covariance large); 6X=Data outage (platform attitude gap also); 7X=ST 1+2 unavailable (similar boresight FOV); 8X=ST 1+2+3 unavailable; 9X=ST 1+2+3 and ISS unavailable; X1=Maneuver; X2=GPS data gap; X3=ST blinding; X4=Other; X5=GPS receiver clock drift; X6=X5+X1; X7=X5+X2; X8=X5+X3; X9=X5+X4.
+geolocation/delta_time => Transmit time of the shot, measured in seconds from the master_time_epoch.  By adding the offset contained within /BEAMXXXX/ancillary/master_time_epoch to delta_time, the time in GPS seconds relative to the GPS epoch can be computed.  Equivalent to /BEAMXXXX/master_int+/BEAMXXXX/master_frac.
+geolocation/digital_elevation_model => Digital elevation model height above the WGS84 ellipsoid.  Interpolated at latitude_bin0 and longitude_bin0 from the TandemX 90m product.
+geolocation/digital_elevation_model_srtm => Digital elevation model height above the WGS84 ellipsoid.  Evaluated at rx_sample_count-selection_stretcher_y from the SRTM 30m product.
+geolocation/elevation_bin0 => Height of the start of the RX window, relative to the WGS-84 ellipsoid.  Includes corrections due to the range bias, atmospheric path delay, solid Earth tides, ocean loading, ocean pole tide, and solid Earth pole tide.
+geolocation/elevation_bin0_error => Error on elevation_bin0.
+geolocation/elevation_lastbin => Height of the end of the RX window, relative to the WGS-84 ellipsoid.  Includes corrections due to the range bias, atmospheric path delay, solid Earth tides, ocean loading, ocean pole tide, and solid Earth pole tide.
+geolocation/elevation_lastbin_error => Error on elevation_lastbin.
+geolocation/latitude_bin0 => Latitude of the start of the RX window.
+geolocation/latitude_bin0_error => Error on latitude_bin0.
+geolocation/latitude_instrument => Latitude of the instrument diffractive optical element (DOE) at laser transmit time.
+geolocation/latitude_instrument_error => Error on latitude_instrument.
+geolocation/latitude_lastbin => Latitude of the end of the RX window.
+geolocation/latitude_lastbin_error => Error on latitude_lastbin.
+geolocation/local_beam_azimuth => Azimuth of the unit pointing vector for the laser in the local ENU frame. The angle is measured from North and positive towards East.
+geolocation/local_beam_azimuth_error => Error on local_beam_azimuth.
+geolocation/local_beam_elevation => Elevation of the unit pointing vector for the laser in the local ENU frame. The angle is measured from East-North plane and positive towards Up.
+geolocation/local_beam_elevation_error => Error on local_beam_elevation.
+geolocation/longitude_bin0 => Longitude of the start of the RX window.
+geolocation/longitude_bin0_error => Error on longitude_bin0.
+geolocation/longitude_instrument => Longitude of the instrument diffractive optical element (DOE) at laser transmit time.
+geolocation/longitude_instrument_error => Error on longitude_instrument.
+geolocation/longitude_lastbin => Longitude of the end of the RX window.
+geolocation/longitude_lastbin_error => Error on longitude_lastbin.
+geolocation/mean_sea_surface => Mean sea surface height above the WGS84 ellipsoid, includes the geoid.  Interpolated at latitude_bin0 and longitude_bin0 from DTU15.
+geolocation/neutat_delay_derivative_bin0 => Change in neutral atmospheric delay per height change for the start of the RX window.
+geolocation/neutat_delay_derivative_lastbin => Change in neutral atmospheric delay per height change for the end of the RX window.
+geolocation/neutat_delay_total_bin0 => Total neutral atmosphere delay correction (wet+dry) from the TX pulse to the start of the RX window (computed according to ICESat-2 ATL03A ATDB).  This value is subtracted from the range during geolocation.
+geolocation/neutat_delay_total_lastbin => Total neutral atmosphere delay correction (wet+dry) from the TX pulse to the end of the RX window (computed according to ICESat-2 ATL03A ATDB).  This value is subtracted from the range during geolocation.
+geolocation/range_bias_correction => The range bias applied to the range measurement.  This value is subtracted from the range to get the corrected range.
+geolocation/shot_number => Unique shot ID.
+geolocation/solar_azimuth => The azimuth of the sun position vector from the laser bounce point position in the local ENU frame. The angle is measured from North and is positive towards East.
+geolocation/solar_elevation => The elevation of the sun position vector from the laser bounce point position in the local ENU frame. The angle is measured from the East-North plane and is positive Up.
+geolocation/surface_type => Flags describing which surface types this interval is associated with. 0=not type, 1=is type. Order of array is land, ocean, sea ice, land ice, inland water.
+geophys_corr/delta_time => Transmit time of the shot, measured in seconds from the master_time_epoch.  By adding the offset contained within /BEAMXXXX/ancillary/master_time_epoch to delta_time, the time in GPS seconds relative to the GPS epoch can be computed.  Equivalent to /BEAMXXXX/master_int+/BEAMXXXX/master_frac.
+geophys_corr/dynamic_atmosphere_correction => Dynamic Atmospheric Correction (DAC) includes inverted barometer (IB) effect.
+geophys_corr/geoid => Geoid height above WGS-84 reference ellipsoid (range -107 to 86m). Not applied on the product.
+geophys_corr/tide_earth => Solid Earth tides
+geophys_corr/tide_load => Load Tide - Local displacement due to Ocean Loading (-6 to 0 cm).
+geophys_corr/tide_ocean => Ocean Tides including diurnal and semi-diurnal (harmonic analysis), and longer period tides (dynamic and self-consistent equilibrium).
+geophys_corr/tide_ocean_pole => Oceanic surface rotational deformation due to polar motion (-2 to 2 mm).
+geophys_corr/tide_pole => Solid Earth Pole Tide -- Rotational deformation due to polar motion (-1.5 to 1.5 cm).
+master_frac => Master time, fractional part.  master_int+master_frac is equivalent to /BEAMXXXX/geolocation/delta_time and /BEAMXXXX/geophys_corr/delta_time.
+master_int => Master time, integer part.  Seconds since master_time_epoch.  master_int+master_frac is equivalent to /BEAMXXXX/geolocation/delta_time and /BEAMXXXX/geophys_corr/delta_time.
+noise_mean_corrected => Noise mean.
+noise_stddev_corrected => Corrected noise standard deviation.
+nsemean_even => Noise mean of the beam's detector channel from even sub-converter.
+nsemean_odd => Noise mean of the beam's odd sub-converter.
+rx_energy => Integrated energy in RX waveform after subtracting the noise mean.
+rx_offset => Time interval from first stored sample to first downloaded RX sample (1ns resolution).
+rx_open => Time interval from t0 to first stored RX sample (4ns resolution).
+rx_sample_count => The number of sample intervals (elements) in each RX waveform.
+rx_sample_start_index => The index in the rxwaveform dataset of the first element of each RX waveform.  The indices start at 1.
+rxwaveform => The corrected receive (RX) waveforms.  Use rx_sample_count and rx_sample_start_index to identify the location of each waveform.
+selection_stretchers_x => Commanded number of samples added to algo section on the left.
+selection_stretchers_y => Commanded number of samples added to algo section on the right.
+shot_number => Unique shot ID.
+stale_return_flag => Indicates that a "stale" cue point from the coarse search algorithm is being used.
+th_left_used => Count values for left threshold used in fine search. Two consecutive points at or above this value indicates pulse detection.
+tx_egamplitude => Amplitude of the extended Gaussian fit to the TX waveform.
+tx_egamplitude_error => Error on tx_egamplitude.
+tx_egbias => Bias of the extended Gaussian fit to the TX waveform.
+tx_egbias_error => Error on tx_egbias.
+tx_egflag => Extended Gaussian fit status flag.  1=convergence in chi2 value, 2=convergence in parameter value, 3=convergence in chi2 and parameter values, 4=convergence in orthogonality, 5=maximum number of iterations reached, 6=ftol too small (no further improvement), 7=xtol too small (no further improvement), 8=gtol too small (no further improvement).
+tx_eggamma => Gamma value of the extended Gaussian fit to the TX waveform.
+tx_eggamma_error => Error on tx_eggamma.
+tx_egsigma => Sigma of the extended Gaussian fit to the TX waveform.
+tx_egsigma_error => Error on tx_egsigma.
+tx_gloc => Location (mean) of the Gaussian fit to the TX waveform.
+tx_gloc_error => Error on tx_gloc.
+tx_pulseflag => Set to 1 if a pulse is detected in the TX waveform.
+tx_sample_count => The number of sample intervals (elements) in each TX waveform.
+tx_sample_start_index => The index in the rxwaveform dataset of the first element of each RX waveform.  The indices start at 1.
+txwaveform => The corrected transmit (TX) waveforms.  Use tx_sample_count and tx_sample_start_index to identify the location of each waveform.

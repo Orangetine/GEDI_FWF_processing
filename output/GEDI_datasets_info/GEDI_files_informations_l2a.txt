@@ -1,0 +1,507 @@
+Structure du fichier H5DF constituant la granule GEDI  :
+['BEAM0000', 'BEAM0001', 'BEAM0010', 'BEAM0011', 'BEAM0101', 'BEAM0110', 'BEAM1000', 'BEAM1011', 'METADATA']
+
+===========================================================================
+Granule METADATA : GEDI02_A_2019120102849_O02152_03_T03735_02_003_01_V002
+===========================================================================
+PGEVersion : 003
+VersionID : 01
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2021-02-11T00:54:34.132131Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2019120102849_O02152_03_T03735_02_003_01_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : e0367e5e-4203-4119-97aa-00db66eed020
+===========================================================================
+Granule METADATA : GEDI02_A_2019275135608_O04560_02_T00655_02_003_01_V002
+===========================================================================
+PGEVersion : 003
+VersionID : 01
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2021-02-15T09:41:42.463073Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2019275135608_O04560_02_T00655_02_003_01_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 0080ed3c-c4f8-4631-bb5f-51e34b80835a
+===========================================================================
+Granule METADATA : GEDI02_A_2020075203117_O07123_02_T02078_02_003_01_V002
+===========================================================================
+PGEVersion : 003
+VersionID : 01
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2021-04-08T16:04:36.812898Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2020075203117_O07123_02_T02078_02_003_01_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : ca0b189b-2694-45a1-93fa-c9f0032c76d7
+===========================================================================
+Granule METADATA : GEDI02_A_2020160175757_O08439_03_T00889_02_003_01_V002
+===========================================================================
+PGEVersion : 003
+VersionID : 01
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2021-05-07T01:47:46.605313Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2020160175757_O08439_03_T00889_02_003_01_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 7cd2ac47-94c2-4bfc-ba0b-cf5e3030f2c8
+===========================================================================
+Granule METADATA : GEDI02_A_2020350075741_O11378_02_T10616_02_003_02_V002
+===========================================================================
+PGEVersion : 003
+VersionID : 02
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2021-07-25T11:32:05.669711Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2020350075741_O11378_02_T10616_02_003_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 716751e3-3192-43b0-86a8-cd5c3cb5a3b1
+===========================================================================
+Granule METADATA : GEDI02_A_2020354062359_O11439_02_T07770_02_003_02_V002
+===========================================================================
+PGEVersion : 003
+VersionID : 02
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2021-07-25T15:19:35.412855Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2020354062359_O11439_02_T07770_02_003_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 5e9a42f5-b08a-4cd3-98dc-a2169653108e
+===========================================================================
+Granule METADATA : GEDI02_A_2020366014236_O11622_02_T10769_02_003_02_V002
+===========================================================================
+PGEVersion : 003
+VersionID : 02
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2021-07-27T18:04:11.649459Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2020366014236_O11622_02_T10769_02_003_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : adccf932-fef7-40c1-9ce0-7d4ec104ee32
+===========================================================================
+Granule METADATA : GEDI02_A_2021022000344_O11962_03_T06581_02_003_02_V002
+===========================================================================
+PGEVersion : 003
+VersionID : 02
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2021-08-25T18:26:39.372036Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2021022000344_O11962_03_T06581_02_003_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : c63d22cd-1b18-4f38-bd85-89a9c04a9833
+===========================================================================
+Granule METADATA : GEDI02_A_2021035114122_O12171_02_T00655_02_003_02_V002
+===========================================================================
+PGEVersion : 003
+VersionID : 02
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2021-08-26T04:58:25.616314Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2021035114122_O12171_02_T00655_02_003_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : e667f434-10ae-42d1-a87e-8002de66e03f
+===========================================================================
+Granule METADATA : GEDI02_A_2021039100834_O12232_02_T07770_02_003_02_V002
+===========================================================================
+PGEVersion : 003
+VersionID : 02
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2021-08-26T08:23:14.661209Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2021039100834_O12232_02_T07770_02_003_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 7dbbbe44-1634-4491-a1da-f9a4e89e5939
+===========================================================================
+Granule METADATA : GEDI02_A_2021043083548_O12293_02_T10616_02_003_02_V002
+===========================================================================
+PGEVersion : 003
+VersionID : 02
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2021-08-26T10:37:29.266049Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2021043083548_O12293_02_T10616_02_003_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 50e21f9b-e238-45f4-aea1-841b08db0017
+===========================================================================
+Granule METADATA : GEDI02_A_2021189223722_O14565_02_T06347_02_003_02_V002
+===========================================================================
+PGEVersion : 003
+VersionID : 02
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2021-11-03T13:12:52.925922Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2021189223722_O14565_02_T06347_02_003_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 9ac6f891-0e53-4fb5-8860-bda84336d581
+===========================================================================
+Granule METADATA : GEDI02_A_2021333135151_O16791_02_T09040_02_003_02_V002
+===========================================================================
+PGEVersion : 003
+VersionID : 02
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2022-03-18T19:10:03.737877Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2021333135151_O16791_02_T09040_02_003_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : e49ee0fa-6078-4f53-bacd-9b81c007dce5
+===========================================================================
+Granule METADATA : GEDI02_A_2022006055803_O17375_03_T09427_02_003_02_V002
+===========================================================================
+PGEVersion : 003
+VersionID : 02
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2022-03-24T02:44:53.338638Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2022006055803_O17375_03_T09427_02_003_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : af92aae2-eee3-4d93-9cc0-05f7249f24aa
+===========================================================================
+Granule METADATA : GEDI02_A_2022248225019_O21139_02_T07923_02_003_02_V002
+===========================================================================
+PGEVersion : 003
+VersionID : 02
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2023-02-09T18:22:38.883343Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2022248225019_O21139_02_T07923_02_003_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : df0c543a-c1d6-4860-9477-409ff0ad852a
+===========================================================================
+Granule METADATA : GEDI02_A_2022271135357_O21490_02_T09040_02_003_02_V002
+===========================================================================
+PGEVersion : 003
+VersionID : 02
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2023-02-10T08:40:54.816978Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2022271135357_O21490_02_T09040_02_003_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 85017981-924d-48ae-a711-20865333c810
+===========================================================================
+Granule METADATA : GEDI02_A_2022340103703_O22558_02_T02231_02_003_02_V002
+===========================================================================
+PGEVersion : 003
+VersionID : 02
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2023-03-13T05:38:27.409779Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2022340103703_O22558_02_T02231_02_003_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : ad5214ab-7bcc-4c0a-91e5-a5597a13e48f
+===========================================================================
+Granule METADATA : GEDI02_A_2023012030848_O23127_03_T02312_02_003_02_V002
+===========================================================================
+PGEVersion : 003
+VersionID : 02
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2023-08-15T17:20:08.260882Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2023012030848_O23127_03_T02312_02_003_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : dc63efc6-8194-41a0-8518-27590a197a24
+===========================================================================
+Granule METADATA : GEDI02_A_2023036102732_O23504_02_T07923_02_003_02_V002
+===========================================================================
+PGEVersion : 003
+VersionID : 02
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2023-08-17T05:49:25.337912Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2023036102732_O23504_02_T07923_02_003_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : d9e64619-5903-4d9a-80c0-f41fd5a9ce7a
+===========================================================================
+Granule METADATA : GEDI02_A_2024193193707_O31606_02_T10769_02_004_03_V002
+===========================================================================
+PGEVersion : 004
+VersionID : 03
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2025-01-26T13:54:33.051739Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2024193193707_O31606_02_T10769_02_004_03_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 154c5120-5f73-4fb9-aeeb-9d0538d8e9d2
+===========================================================================
+Granule METADATA : GEDI02_A_2024224073223_O32079_02_T05077_02_004_03_V002
+===========================================================================
+PGEVersion : 004
+VersionID : 03
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2025-01-28T02:26:28.955376Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2024224073223_O32079_02_T05077_02_004_03_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 59064e45-ec9c-4b87-896b-a9719372992a
+===========================================================================
+Granule METADATA : GEDI02_A_2024226134154_O32114_03_T10850_02_004_03_V002
+===========================================================================
+PGEVersion : 004
+VersionID : 03
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2025-01-28T03:33:55.629169Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2024226134154_O32114_03_T10850_02_004_03_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : d8d9f26b-2b9b-4808-8bfe-331496fb07e1
+===========================================================================
+Granule METADATA : GEDI02_A_2024307054530_O33365_03_T08004_02_004_02_V002
+===========================================================================
+PGEVersion : 004
+VersionID : 02
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2025-01-31T13:33:15.362736Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2024307054530_O33365_03_T08004_02_004_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 1f54914a-5c5f-4561-80f5-9f3dfd08d7fa
+===========================================================================
+Granule METADATA : GEDI02_A_2025036090232_O34841_02_T02078_02_004_02_V002
+===========================================================================
+PGEVersion : 004
+VersionID : 02
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2025-07-04T19:49:10.734504Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2025036090232_O34841_02_T02078_02_004_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : f336d084-cb81-4838-bd92-3e037e67f069
+===========================================================================
+Granule METADATA : GEDI02_A_2025117010605_O36092_02_T10616_02_004_02_V002
+===========================================================================
+PGEVersion : 004
+VersionID : 02
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2025-12-18T18:57:55.826905Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2025117010605_O36092_02_T10616_02_004_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 90769b03-955e-457b-bd18-77465fff889a
+===========================================================================
+Granule METADATA : GEDI02_A_2025120233143_O36153_02_T09193_02_004_02_V002
+===========================================================================
+PGEVersion : 004
+VersionID : 02
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2025-12-18T21:33:37.190707Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2025120233143_O36153_02_T09193_02_004_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 027d0096-4c01-4d0e-bf7f-6100142acd4e
+===========================================================================
+Granule METADATA : GEDI02_A_2025131023353_O36310_03_T06581_02_004_02_V002
+===========================================================================
+PGEVersion : 004
+VersionID : 02
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2025-12-19T03:18:10.240202Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2025131023353_O36310_03_T06581_02_004_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 99b7ca7d-3380-40bd-be57-31dbaa2d68e5
+===========================================================================
+Granule METADATA : GEDI02_A_2025163064814_O36809_02_T04924_02_004_02_V002
+===========================================================================
+PGEVersion : 004
+VersionID : 02
+abstract : The GEDI L2A standard data product contains precise latitude, longitude, elevation, canopy height and surface energy metrics extracted from return waveforms for the various reflecting surfaces located within each laser footprint.
+characterSet : utf8
+creationDate : 2026-01-08T01:39:30.792150Z
+credit : The software that generates the L2A product was designed and implemented within the GEDI Science Data Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland in collaboration with the LVIS (Land, Vegetation, and Ice Sensor) Team and the University of Maryland.
+fileName : GEDI02_A_2025163064814_O36809_02_T04924_02_004_02_V002.h5
+language : eng
+originatorOrganizationName : GSFC GEDI-SDPS > GEDI Science Data Processing System and University of Maryland
+purpose : The purpose of the L2A dataset is to provide waveform interpretation and extracted products from each GEDI waveform.  This includes ground elevation, canopy top height, relative return energy metrics (describing canopy vertical structure, for example), and many other interpreted products from the return waveforms.
+shortName : GEDI_L2A
+spatialRepresentationType : along-track
+status : onGoing
+topicCategory : geoscientificInformation
+uuid : 0e7bf0e4-99e2-497c-a503-7f84564e440b
