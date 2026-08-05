@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import os
 import h5py
 import numpy as np
@@ -59,6 +61,28 @@ def get_granule_datasets(GEDIhdf5: h5py.File) -> list[str]:
 def get_datasets_from_beamname(granule_datasets_list: list[str], beam_name) -> list[str]:
     """Get all datasets name (attributs) from beam name"""
     return [dataset for dataset in granule_datasets_list if beam_name in dataset]
+
+
+def get_GEDI_granules_downloaded(directory: str, gedi_filenames: list[str]) -> None:
+    "Write text file with granules downloaded list"
+    DATA_ACCESS_URLS = {
+        'GEDI01' : 'https://search.earthdata.nasa.gov/search/granules?p=C2142749196-LPCLOUD',
+        'GEDI02' : 'https://search.earthdata.nasa.gov/search/granules?p=C2142771958-LPCLOUD'
+    }
+    name  = gedi_filenames[0]
+    product, suffix = name.split('_')[0], name.split('_')[1]
+    output_filename = f"GEDI_granules_list_l{product[-1]}{suffix.lower()}.txt"
+
+    product_key = product[:6]   # {'GEDI01' or 'GEDI02'}
+    data_access = DATA_ACCESS_URLS[product_key]
+    
+    with open(directory + output_filename, 'w') as f:
+        f.write('==='*12 + '\n')
+        f.write(f'List of {"".join([product, suffix])} granules downloaded\n')
+        f.write('==='*12 + '\n\n')
+        f.write(data_access + '\n\n')
+        for gedi_filename in gedi_filenames:
+            f.write(gedi_filename + '\n')
 
 
 def get_GEDI_data_file_informations(granules_list: list[h5py.File], filename: str = 'GEDI_files_informations.txt') -> None:

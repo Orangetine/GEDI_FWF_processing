@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "emprise_gedi",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": 1 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -5.936802516671395, 35.816085129501182 ], [ -5.861503769535391, 35.897804700036382 ], [ -5.625100726201424, 35.717437933640838 ], [ -5.709738852827165, 35.631632384578879 ], [ -5.936802516671395, 35.816085129501182 ] ] ] } }
+]
+}

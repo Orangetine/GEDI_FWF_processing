@@ -44,6 +44,8 @@ gediFilesL2A = get_GEDI_files(L2A_GRANULES_DIR)
 
 # GEDI File names
 gedifiles_names_l1b = [f.split('.')[0] for f in gediFilesL1B]
+gedifiles_names_l2a = [f.split('.')[0] for f in gediFilesL2A]
+
 # Granule years
 granule_years = [gedifiles_name.split('_')[2][:4] for gedifiles_name in gedifiles_names_l1b]
 
@@ -66,12 +68,16 @@ open_files = {l1b.filename : l1b for l1b in granule_h5_list_l1b}
 # The eight remaining groups contain data for each of the eight GEDI beam transects. 
 # For additional information, be sure to check out: https://gedi.umd.edu/instrument/specifications/.
 
-# Get GEDI DATA and METADATA Informations
-# get_GEDI_data_file_informations(granule_h5_list_l1b, 'GEDI_files_informations_l1b.txt')
-# get_GEDI_beams_informations(granule_h5_list_l1b, 'GEDI_beams_informations_l1b.txt')
+# Get GEDI granules list downloaded
+get_GEDI_granules_downloaded(L1B_GRANULES_DIR, gediFilesL1B)
+get_GEDI_granules_downloaded(L2A_GRANULES_DIR, gediFilesL2A)
 
-# get_GEDI_data_file_informations(granule_h5_list_l2a, 'GEDI_files_informations_l2a.txt')
-# get_GEDI_beams_informations(granule_h5_list_l2a, 'GEDI_beams_informations_l2a.txt')
+# Get GEDI DATA and METADATA Informations
+get_GEDI_data_file_informations(granule_h5_list_l1b, 'GEDI_files_informations_l1b.txt')
+get_GEDI_beams_informations(granule_h5_list_l1b, 'GEDI_beams_informations_l1b.txt')
+
+get_GEDI_data_file_informations(granule_h5_list_l2a, 'GEDI_files_informations_l2a.txt')
+get_GEDI_beams_informations(granule_h5_list_l2a, 'GEDI_beams_informations_l2a.txt')
 
 get_datasets_specification(granule_h5_list_l1b[0])
 get_datasets_specification(granule_h5_list_l2a[0])
@@ -99,48 +105,32 @@ else:
 vdims = [col for col in GEDI_012_BA_GDF if col != 'geometry']
 
 # Plotting an interactive HTML plot of waveforms shots 
-# plot_a_FWF(open_files, GEDI_012_BA_GDF, indices=range(1994,2000))
-# # Plotting five first full waveforms shots
-# plot_some_fwf(open_files, GEDI_012_BA_GDF)
-# # Plotting shots and Region of Interest
-# plot_shots_and_roi(north_morroco_roi, GEDI_012_BA_GDF)
+plot_a_FWF(open_files, GEDI_012_BA_GDF, indices=range(1994,2000))
+# Plotting five first full waveforms shots
+plot_some_fwf(open_files, GEDI_012_BA_GDF)
+# Plotting shots and Region of Interest
+plot_shots_and_roi(north_morroco_roi, GEDI_012_BA_GDF)
 
 
-# # Get points/lines/cells grid geometry within ROI 
-# grid, gridinside = get_points_grid(north_morroco_roi)
-# grid_lines_gdf, grid_lines_clipped = get_lines_grid(north_morroco_roi)
-# grid_cells, grid_cellsinside = get_cells_grid(north_morroco_roi)
-# # Compute attribute n_points in GEoDataFrame to get density of point per cells
-# grid_cells, grid_cellsinside = get_number_of_shots_per_cells(GEDI_012_BA_GDF, grid_cells), get_number_of_shots_per_cells(GEDI_012_BA_GDF, grid_cellsinside)
+# Get points/lines/cells grid geometry within ROI 
+grid, gridinside = get_points_grid(north_morroco_roi)
+grid_lines_gdf, grid_lines_clipped = get_lines_grid(north_morroco_roi)
+grid_cells, grid_cellsinside = get_cells_grid(north_morroco_roi)
+# Compute attribute n_points in GEoDataFrame to get density of point per cells
+grid_cells, grid_cellsinside = get_number_of_shots_per_cells(GEDI_012_BA_GDF, grid_cells), get_number_of_shots_per_cells(GEDI_012_BA_GDF, grid_cellsinside)
 
-# # Plot grid and shots
-# plot_grid_and_GEDI_shots(north_morroco_roi, GEDI_012_BA_GDF, gridinside, grid_lines_clipped)
+# Plot grid and shots
+plot_grid_and_GEDI_shots(north_morroco_roi, GEDI_012_BA_GDF, gridinside, grid_lines_clipped)
 
-# # Plot shots density per grid cells
-# plot_density_map(grid_cells, north_morroco_roi)
+# Plot shots density per grid cells
+plot_density_map(grid_cells, north_morroco_roi)
 
-
-# GEDI Data Structure 
-# rxwaveform est le tableau qui contient les waveforms
-# Ce n'est pas un tableau bien rangé (n_shots, n_samples)
-# Mais un tableau 1D qui contient bout à bout tous les échantillons 
-# de tous les shots du beam à la suite. 
-# 
-# rxwaveform = [ shot1_ech1, shot1_ech2, ..., shot1_echN1,
-#                shot2_ech1, shot2_ech2, ..., shot2_echN2,
-#                shot3_ech1, ..., shot3_echN3, ... ]
-
-# Chaque shots sur le terrain n'a pas le même nombre d'échantillons. 
-# Un shot sur terrain plat de peu de végétation a une fenêtre d'enregistrement courte, 
-# un shot sur relief accidenté avec canopée dense a une fenêtre bien plus longue.
-
-# # Plot GEDI shot position from shot number
+# Plot GEDI shot position from shot number
 plot_GEDI_shot(GEDI_012_BA_GDF, shot_number=21520500300373664)
 
 # Plot FWF from GEDI shot number
 plot_FWF_from_shot_number(GEDI_012_BA_GDF, open_files, shot_number=21520500300373664)
 
-# print(GEDI_012_BA_GDF.columns)
 
 # # Every datasets from each beam and granule
 # all_sds_flat = get_gedi_datasets_flat(granule_h5_list_l1b)
