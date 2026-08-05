@@ -156,3 +156,5 @@ def plot_FWF_from_shot_number(GEDI_shots: gpd.GeoDataFrame, open_files: dict[str
     plot = hv.Curve(wvDF).opts(tools=['hover'], height=500, width=900, title=f'Full waveform from shot : {shot_number}')
     hv.save(plot, DATA_VIZ_DIR + f'gedi_fwf_shot_{shot_number}.html')
     display(plot)
+
+

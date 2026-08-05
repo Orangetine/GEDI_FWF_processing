@@ -1,16 +1,18 @@
 
 import os
-
 import warnings
-import geoviews as gv
 import geopandas as gpd
 
-from gedi_fwf_processing.data_io import *
-from gedi_fwf_processing.data_prep import *
-from gedi_fwf_processing.data_viz import *
+import gedi_fwf_processing.data_io as gio
+import gedi_fwf_processing.data_prep as gprep
+import gedi_fwf_processing.data_viz as gviz
 
-import holoviews as hv
-gv.extension('bokeh', 'matplotlib')
+from gedi_fwf_processing.data_prep import (
+    L1B_GRANULES_DIR, L2A_GRANULES_DIR, 
+    gediFilesL1B, gediFilesL2A, granule_h5_list_l1b, 
+    granule_h5_list_l2a, EXTENT_DIR, GEDI_shots_path, 
+    granules, beamNames, open_files
+)
 
 from bokeh.util.warnings import BokehUserWarning
 warnings.simplefilter(action='ignore', category=BokehUserWarning)
@@ -23,18 +25,18 @@ warnings.simplefilter(action='ignore', category=BokehUserWarning)
 # For additional information, be sure to check out: https://gedi.umd.edu/instrument/specifications/.
 
 # Get GEDI granules list downloaded
-get_GEDI_granules_downloaded(L1B_GRANULES_DIR, gediFilesL1B)
-get_GEDI_granules_downloaded(L2A_GRANULES_DIR, gediFilesL2A)
+gio.get_GEDI_granules_downloaded(L1B_GRANULES_DIR, gediFilesL1B)
+gio.get_GEDI_granules_downloaded(L2A_GRANULES_DIR, gediFilesL2A)
 
 # Get GEDI DATA and METADATA Informations
-get_GEDI_data_file_informations(granule_h5_list_l1b, 'GEDI_files_informations_l1b.txt')
-get_GEDI_beams_informations(granule_h5_list_l1b, 'GEDI_beams_informations_l1b.txt')
+gio.get_GEDI_data_file_informations(granule_h5_list_l1b, 'GEDI_files_informations_l1b.txt')
+gio.get_GEDI_beams_informations(granule_h5_list_l1b, 'GEDI_beams_informations_l1b.txt')
 
-get_GEDI_data_file_informations(granule_h5_list_l2a, 'GEDI_files_informations_l2a.txt')
-get_GEDI_beams_informations(granule_h5_list_l2a, 'GEDI_beams_informations_l2a.txt')
+gio.get_GEDI_data_file_informations(granule_h5_list_l2a, 'GEDI_files_informations_l2a.txt')
+gio.get_GEDI_beams_informations(granule_h5_list_l2a, 'GEDI_beams_informations_l2a.txt')
 
-get_datasets_specification(granule_h5_list_l1b[0])
-get_datasets_specification(granule_h5_list_l2a[0])
+gio.get_datasets_specification(granule_h5_list_l1b[0])
+gio.get_datasets_specification(granule_h5_list_l2a[0])
 
 
 # Region of interest
@@ -43,7 +45,7 @@ north_morroco_roi = gpd.GeoDataFrame.from_file(
 )
 
 if not os.path.isfile(GEDI_shots_path):
-    GEDI_012_BA_GDF = get_all_GEDI_shots_within_roi(granules, north_morroco_roi, beamNames)
+    GEDI_012_BA_GDF = gprep.get_all_GEDI_shots_within_roi(granules, north_morroco_roi, beamNames)
     # GEDI_012_BA_GDF = GEDI_012_BA_GDF[(GEDI_012_BA_GDF['Quality Flag'] == 1) & (GEDI_012_BA_GDF['Degrade'] == 0)]
 
     # EPSG:4326 is causing an offset in projection when plotting the layers with geoviews
@@ -59,31 +61,31 @@ else:
 vdims = [col for col in GEDI_012_BA_GDF if col != 'geometry']
 
 # Plotting an interactive HTML plot of waveforms shots 
-plot_a_FWF(open_files, GEDI_012_BA_GDF, indices=range(1994,2000))
+gviz.plot_a_FWF(open_files, GEDI_012_BA_GDF, indices=range(1994,2000))
 # Plotting five first full waveforms shots
-plot_some_fwf(open_files, GEDI_012_BA_GDF)
+gviz.plot_some_fwf(open_files, GEDI_012_BA_GDF)
 # Plotting shots and Region of Interest
-plot_shots_and_roi(north_morroco_roi, GEDI_012_BA_GDF)
+gviz.plot_shots_and_roi(north_morroco_roi, GEDI_012_BA_GDF)
 
 
 # Get points/lines/cells grid geometry within ROI 
-grid, gridinside = get_points_grid(north_morroco_roi)
-grid_lines_gdf, grid_lines_clipped = get_lines_grid(north_morroco_roi)
-grid_cells, grid_cellsinside = get_cells_grid(north_morroco_roi)
+grid, gridinside = gprep.get_points_grid(north_morroco_roi)
+grid_lines_gdf, grid_lines_clipped = gprep.get_lines_grid(north_morroco_roi)
+grid_cells, grid_cellsinside = gprep.get_cells_grid(north_morroco_roi)
 # Compute attribute n_points in GEoDataFrame to get density of point per cells
-grid_cells, grid_cellsinside = get_number_of_shots_per_cells(GEDI_012_BA_GDF, grid_cells), get_number_of_shots_per_cells(GEDI_012_BA_GDF, grid_cellsinside)
+grid_cells, grid_cellsinside = gprep.get_number_of_shots_per_cells(GEDI_012_BA_GDF, grid_cells), gprep.get_number_of_shots_per_cells(GEDI_012_BA_GDF, grid_cellsinside)
 
 # Plot grid and shots
-plot_grid_and_GEDI_shots(north_morroco_roi, GEDI_012_BA_GDF, gridinside, grid_lines_clipped)
+gviz.plot_grid_and_GEDI_shots(north_morroco_roi, GEDI_012_BA_GDF, gridinside, grid_lines_clipped)
 
 # Plot shots density per grid cells
-plot_density_map(grid_cells, north_morroco_roi)
+gviz.plot_density_map(grid_cells, north_morroco_roi)
 
 # Plot GEDI shot position from shot number
-plot_GEDI_shot(GEDI_012_BA_GDF, shot_number=21520500300373664)
+gviz.plot_GEDI_shot(GEDI_012_BA_GDF, shot_number=21520500300373664)
 
 # Plot FWF from GEDI shot number
-plot_FWF_from_shot_number(GEDI_012_BA_GDF, open_files, shot_number=21520500300373664)
+gviz.plot_FWF_from_shot_number(GEDI_012_BA_GDF, open_files, shot_number=21520500300373664)
 
 
 

@@ -120,3 +120,5 @@ def get_datasets_specification(granule: h5py.File) -> None:
         f.write( "==="*7 + "\n" +"Attributs'description\n"+ "==="*7 + "\n\n")
         for dataset in beam_sds:
             f.write(f"{dataset.replace('BEAM0000/', '')} => {granule[dataset].attrs['description']}\n")
+
+            

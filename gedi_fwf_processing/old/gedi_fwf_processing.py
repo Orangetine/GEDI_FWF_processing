@@ -85,3 +85,4 @@ print(f"The waveform located at: {str(wf_latitude)}, {str(wf_longitude)} (shot I
 
 # index = np.where(all_shots_array == shot)
 # print(index)
+
