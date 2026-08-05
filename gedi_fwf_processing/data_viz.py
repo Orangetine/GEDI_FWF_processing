@@ -15,7 +15,7 @@ from geoviews import tile_sources as gvts
 gv.extension('bokeh', 'matplotlib')
 
 from collections.abc import Iterable
-from gedi_fwf_processing.data_prep import extract_waveform, extract_FWF_from_shot_number
+from gedi_fwf_processing.data_prep import extract_waveform, compute_relative_height, extract_FWF_from_shot_number
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.abspath(__file__), "../.."))
 OUTPUT_DIR = os.path.join(ROOT_DIR, 'output/')
@@ -32,8 +32,8 @@ def plot_some_fwf(open_files: dict[str, h5py.File], GEDI_shots: gpd.GeoDataFrame
     """Static png plot of five first full waveforms"""
     plt.figure(figsize=(10, 8))
     for i in range(number):
-        fwf, zStretch = extract_waveform(open_files, GEDI_shots.iloc[i])
-        plt.plot(zStretch, fwf)
+        fwf, zRelative = extract_waveform(open_files, GEDI_shots.iloc[i]), compute_relative_height(GEDI_shots.iloc[i])
+        plt.plot(zRelative, fwf)
 
     plt.xlabel("Elévation (m)")
     plt.ylabel("Amplitude (DN)")
@@ -44,7 +44,7 @@ def plot_a_FWF(open_files: dict[str, h5py.File], GEDI_shots: gpd.GeoDataFrame, i
     """Interactive HTML plot of full waveforms of some GEDI shots"""
     waveforms = {}
     for i in indices:
-        fwf, zRelative = extract_waveform(open_files, GEDI_shots.iloc[i])
+        fwf, zRelative = extract_waveform(open_files, GEDI_shots.iloc[i]), compute_relative_height(GEDI_shots.iloc[i])
         wvDF = pd.DataFrame({'Elevation (m)': zRelative, 'Amplitude (DN)': fwf})
         waveforms[i] = hv.Curve(wvDF)
 

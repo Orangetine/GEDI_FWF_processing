@@ -135,22 +135,29 @@ def get_all_GEDI_shots_within_roi(granules: list[int, h5py.File, h5py.File], roi
         del granule_df, granule_gdf
     return pd.concat(all_gdf_filtered, ignore_index=True)
 
-def extract_waveform(open_files: dict[str, h5py.File], row: pd.Series) -> tuple[np.array, np.array]:
+def extract_waveform(open_files: dict[str, h5py.File], row: pd.Series) -> np.array:
     """Extract corresponding shot waveform from a row of DataFrame containing all shots in ROI"""
     granule = open_files[row['Granule Path']]
     beam = row['Beam']
-    start = row['Sample Start Index']- 1
+    start = row['Sample Start Index'] - 1
     count = row['Sample Count']
+    return  granule[f'{beam}/rxwaveform'][start: start+count][::-1] 
+
+
+def compute_relative_height(row: pd.Series) -> np.array:
+    "Compute Relative Height (elevation) of full waveform samples (ground elevation to 0))"
     zStart = row['Elevation bin0']
     zEnd = row['Elevation lastbin']
+    count = row['Sample Count']
     zStretch = np.add(zEnd, np.multiply(range(count, 0, -1), ((zStart - zEnd) / int(count))))
-    zRelative = zStretch - row['Elevation Lowestmode']
-    return  granule[f'{beam}/rxwaveform'][start: start+count][::-1], zRelative[::-1]
+    zRelative = zStretch - row['Elevation Lowestmode']  # Substracting ground elevation to make all shot groud elevation to zero
+    return zRelative[::-1]  # Inverse to get croissant relative height from bottom to top of canopy, otherwise the return will begin from top of canopy to ground
+
 
 def extract_FWF_from_shot_number(GEDI_shots: gpd.GeoDataFrame, open_files: dict[str, h5py.File], shot_number: int) -> tuple[np.array, np.array]:
     """Extract full waveform from shot number"""
     row = GEDI_shots[GEDI_shots['Shot Number'] == shot_number].iloc[0]
-    fwf, zRelative = extract_waveform(open_files, row)
+    fwf, zRelative = extract_waveform(open_files, row), compute_relative_height(row)
     print(f"""The waveform located at : {str(np.round(row['geometry'].y, 3))}, {str(np.round(row['geometry'].x, 3))} (shot ID: {row['Shot Number']}), is from beam "{row['Beam']}"
         and is stored in rxwaveform beginning at index {row['Sample Start Index']} and ending at index {row['Sample Start Index'] + row['Sample Count']}.""")
     return fwf, zRelative
