@@ -98,6 +98,8 @@ def get_df_from_beam(l1b: h5py.File, l2a: h5py.File, beamName: str, stride: int)
         'Quality Flag' : quality_flag,
         'Sensitivity' : sensitivity,
         'Surface Flag' : surface_flag, 
+        'RH0' :rh[:, 0],
+        'RH1' : rh[:, 1],
         'RH98' : rh[:, 98],
     })
     
@@ -145,12 +147,12 @@ def extract_waveform(open_files: dict[str, h5py.File], row: pd.Series) -> np.arr
 
 
 def compute_relative_height(row: pd.Series) -> np.array:
-    "Compute Relative Height (elevation) of full waveform samples (ground elevation to 0))"
+    "Compute Relative Height (elevation) for each waveform samples (with ground elevation set to 0)"
     zStart = row['Elevation bin0']
     zEnd = row['Elevation lastbin']
     count = row['Sample Count']
     zStretch = np.add(zEnd, np.multiply(range(count, 0, -1), ((zStart - zEnd) / int(count))))
-    zRelative = zStretch - row['Elevation Lowestmode']  # Substracting ground elevation to make all shot groud elevation to zero
+    zRelative = zStretch - row['Elevation Lowestmode']  # Subtracting ground elevation to make all shot ground elevation to zero
     return zRelative[::-1]  # Inverse to get croissant relative height from bottom to top of canopy, otherwise the return will begin from top of canopy to ground
 
 
