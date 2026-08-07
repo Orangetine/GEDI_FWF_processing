@@ -140,8 +140,7 @@ def plot_GEDI_shot(GEDI_shots: gpd.GeoDataFrame, shot_number: int=12232030020022
                                             'xlabel':16, 'ylabel': 16},
                         marker='diamond',                           
                         title=f'Position GEDI shot number : {shot_number}')
-    )\
-        .opts(
+    ).opts(
         xlim=(x - buffer, x + buffer),
         ylim=(y - buffer, y + buffer),
     )
