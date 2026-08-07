@@ -260,11 +260,3 @@ def get_number_of_shots_per_cells(GEDI_shots: gpd.GeoDataFrame, gridcells: gpd.G
     gridcells['n_points'] = gridcells['n_points'].fillna(0).astype(int)
     return gridcells
 
-
-if __name__ == "__main__":
-    north_morroco_roi = gpd.GeoDataFrame.from_file(
-        EXTENT_DIR + 'emprise_gedi.geojson',
-    )
-    north_morroco_roi = north_morroco_roi.to_crs(3857)
-
-    grid_cells, _ = get_cells_grid(north_morroco_roi) 
