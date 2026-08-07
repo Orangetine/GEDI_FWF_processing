@@ -59,7 +59,7 @@ def aggregate_fwf_per_cell(GEDI_shots: gpd.GeoDataFrame, gridcells: gpd.GeoDataF
 
 
 def plot_fwf_per_cell(GEDI_shots, gridcells, zrange, nplots: int = 9):
-    """Plot interpolated FWF per cells, by default it is the plot of five first cells, 
+    """Plot interpolated FWF per cells, by default it plots the FWFs of nineth first cells, 
     otherwise it saves too much files because of the number of cells"""
     joined = gpd.sjoin(GEDI_shots, gridcells[['geometry', 'cell_id']], how='inner', predicate='within')
     for i, (cell_id, shots_per_cell) in enumerate(joined.groupby('cell_id')):
