@@ -6,6 +6,7 @@ import numpy as np
 import pandas as pd
 import geopandas as gpd
 
+from itertools import product
 from shapely.geometry import box
 from shapely.geometry import LineString
 
@@ -66,6 +67,8 @@ def get_df_from_beam(l1b: h5py.File, l2a: h5py.File, beamName: str, stride: int)
     rx_sample_count = l1b[f'{beamName}/rx_sample_count'][()][::stride]
     srf = l1b[f'{beamName}/stale_return_flag'][()][::stride]
     degrade = l1b[f'{beamName}/geolocation/degrade'][()][::stride]
+    noise_mean = l1b[f'{beamName}/noise_mean_corrected'][()][::stride]   # this attribute is subtracted from the waveform to correct the vertical (amplitude) offset caused by background noise
+    noise_std = l1b[f'{beamName}/noise_stddev_corrected'][()][::stride]
     granule_path = l1b.filename
 
     # L2A datasets
@@ -88,6 +91,8 @@ def get_df_from_beam(l1b: h5py.File, l2a: h5py.File, beamName: str, stride: int)
         'Sample Count' : rx_sample_count,
         'Stale Return Flag' : srf,
         'Degrade' : degrade,
+        'Noise Mean Corrected' : noise_mean,
+        'Noise Std Corrected' : noise_std,
         'Granule Path' : granule_path,
     })
 
@@ -143,7 +148,7 @@ def extract_waveform(open_files: dict[str, h5py.File], row: pd.Series) -> np.arr
     beam = row['Beam']
     start = row['Sample Start Index'] - 1
     count = row['Sample Count']
-    return  granule[f'{beam}/rxwaveform'][start: start+count][::-1] 
+    return  (granule[f'{beam}/rxwaveform'][start: start+count][::-1] - row['Noise Mean Corrected']) / row['Noise Std Corrected']
 
 
 def compute_relative_height(row: pd.Series) -> np.array:
@@ -238,8 +243,11 @@ def get_cells_grid(roi: gpd.GeoDataFrame, spacing: int=1000) -> tuple[gpd.GeoDat
     """Return Grid Cells from ROI coordinates"""
     xcoords, ycoords = _get_coords_xy(roi, spacing)
     cells = [box(x, y, x + spacing, y + spacing) for x in xcoords for y in ycoords]
+    cell_cols = [col_idx for col_idx, row_idx in product(range(len(xcoords)), range(len(ycoords)))]
+    cell_rows = [row_idx for col_idx, row_idx in product(range(len(xcoords)), range(len(ycoords)))]
     grid_cells = gpd.GeoDataFrame(geometry=cells, crs=roi.crs)
     grid_cells['cell_id'] = np.arange(len(grid_cells))
+    grid_cells['row'], grid_cells['col'] = cell_rows, cell_cols
     grid_cellsinside = gpd.sjoin(grid_cells, roi[['geometry']], how='inner')
     return grid_cells, grid_cellsinside
 
@@ -252,3 +260,11 @@ def get_number_of_shots_per_cells(GEDI_shots: gpd.GeoDataFrame, gridcells: gpd.G
     gridcells['n_points'] = gridcells['n_points'].fillna(0).astype(int)
     return gridcells
 
+
+if __name__ == "__main__":
+    north_morroco_roi = gpd.GeoDataFrame.from_file(
+        EXTENT_DIR + 'emprise_gedi.geojson',
+    )
+    north_morroco_roi = north_morroco_roi.to_crs(3857)
+
+    grid_cells, _ = get_cells_grid(north_morroco_roi) 
