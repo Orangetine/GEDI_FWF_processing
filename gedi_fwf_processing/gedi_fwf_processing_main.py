@@ -76,7 +76,7 @@ grid_cells, grid_cellsinside = gprep.get_cells_grid(north_morroco_roi)
 grid_cells, grid_cellsinside = gprep.get_number_of_shots_per_cells(GEDI_012_BA_GDF, grid_cells), gprep.get_number_of_shots_per_cells(GEDI_012_BA_GDF, grid_cellsinside)
 
 # Plot grid and shots
-gviz.plot_grid_and_GEDI_shots(north_morroco_roi, GEDI_012_BA_GDF, gridinside, grid_lines_clipped)
+gviz.plot_grid_and_GEDI_shots(north_morroco_roi, GEDI_012_BA_GDF, grid, grid_lines_gdf)
 
 # Plot shots density per grid cells
 gviz.plot_density_map(grid_cells, north_morroco_roi)
