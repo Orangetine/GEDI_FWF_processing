@@ -9,6 +9,7 @@ __pycache__
 *.gpkg
 *.html
 *.tif
+*.png
 
 # GeoDataFrame GEDI shots
 GEDI0102_BA_GDF.geojson
