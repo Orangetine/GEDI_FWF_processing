@@ -56,9 +56,15 @@ if not os.path.isfile(GEDI_shots_path):
 else:
     GEDI_012_BA_GDF = gpd.read_file(GEDI_shots_path)
     north_morroco_roi = north_morroco_roi.to_crs(3857)
+    # GEDI_012_BA_GDF = GEDI_012_BA_GDF[(GEDI_012_BA_GDF['Quality Flag'] == 1)] 
 
-# Retriving columns from GeoDataframe to plot attributes
-vdims = [col for col in GEDI_012_BA_GDF if col != 'geometry']
+    # Quality flag indicates if the shot is reliable or not.
+    # If Quality flag = 1 the data met the criteria for energy, sensitivity, amplitude, and real-time surface tracking quality. 
+    # If Quality flag = 0 it is likely the waveform signal was poor or the ground was not detected or distinguishable.
+    # Source : https://nasa-earthrise.github.io/training_Getting_started_with_GEDI_spaceborne_lidar/gedi-fundamentals#quality-flag
+    # Number of shots with quality flag on : (54158, 23)
+    # Number of shots with quality flag on : (23252, 23)
+    # We lose almost 50% of the shots 
 
 # Plotting an interactive HTML plot of waveforms shots 
 gviz.plot_a_FWF(open_files, GEDI_012_BA_GDF, indices=range(1994,2000))
@@ -69,9 +75,10 @@ gviz.plot_shots_and_roi(north_morroco_roi, GEDI_012_BA_GDF)
 
 
 # Get points/lines/cells grid geometry within ROI 
-grid, gridinside = gprep.get_points_grid(north_morroco_roi)
-grid_lines_gdf, grid_lines_clipped = gprep.get_lines_grid(north_morroco_roi)
-grid_cells, grid_cellsinside = gprep.get_cells_grid(north_morroco_roi)
+spacing = 800 # grid cell of 800 meters
+grid, gridinside = gprep.get_points_grid(north_morroco_roi, spacing=spacing)
+grid_lines_gdf, grid_lines_clipped = gprep.get_lines_grid(north_morroco_roi, spacing=spacing)
+grid_cells, grid_cellsinside = gprep.get_cells_grid(north_morroco_roi, spacing=spacing)
 # Compute attribute n_points in GEoDataFrame to get density of point per cells
 grid_cells, grid_cellsinside = gprep.get_number_of_shots_per_cells(GEDI_012_BA_GDF, grid_cells), gprep.get_number_of_shots_per_cells(GEDI_012_BA_GDF, grid_cellsinside)
 
