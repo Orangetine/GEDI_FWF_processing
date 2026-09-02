@@ -62,7 +62,7 @@ else:
     # If Quality flag = 1 the data met the criteria for energy, sensitivity, amplitude, and real-time surface tracking quality. 
     # If Quality flag = 0 it is likely the waveform signal was poor or the ground was not detected or distinguishable.
     # Source : https://nasa-earthrise.github.io/training_Getting_started_with_GEDI_spaceborne_lidar/gedi-fundamentals#quality-flag
-    # Number of shots with quality flag on : (54158, 23)
+    # Number of shots with quality flag off : (54158, 23)
     # Number of shots with quality flag on : (23252, 23)
     # We lose almost 50% of the shots 
 
