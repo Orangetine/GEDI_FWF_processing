@@ -142,6 +142,7 @@ def get_all_GEDI_shots_within_roi(granules: list[int, h5py.File, h5py.File], roi
         del granule_df, granule_gdf
     return pd.concat(all_gdf_filtered, ignore_index=True)
 
+
 def extract_waveform(open_files: dict[str, h5py.File], row: pd.Series) -> np.array:
     """Extract corresponding shot waveform from a row of DataFrame containing all shots in ROI"""
     granule = open_files[row['Granule Path']]
@@ -168,6 +169,7 @@ def extract_FWF_from_shot_number(GEDI_shots: gpd.GeoDataFrame, open_files: dict[
     print(f"""The waveform located at : {str(np.round(row['geometry'].y, 3))}, {str(np.round(row['geometry'].x, 3))} (shot ID: {row['Shot Number']}), is from beam "{row['Beam']}"
         and is stored in rxwaveform beginning at index {row['Sample Start Index']} and ending at index {row['Sample Start Index'] + row['Sample Count']}.""")
     return fwf, zRelative
+
 
 def get_gedi_datasets_flat(granules_list: list[h5py.File]) -> list[tuple[h5py.File, str]]: 
     """Retourne une liste plate (granule, chemin_dataset)"""
@@ -206,16 +208,16 @@ def _get_coords_xy(roi: gpd.GeoDataFrame, spacing: int):
     return xcoords, ycoords
 
 
-def get_points_coords_roi(roi: gpd.GeoDataFrame, spacing: int=1000) -> np.array:
+def _get_points_coords_roi(roi: gpd.GeoDataFrame, spacing: int) -> np.array:
     """Get ndarray point coordinates of a Grid of 1km resolution over a ROI"""
     xcoords, ycoords = _get_coords_xy(roi, spacing)
     pointscoords = np.array(np.meshgrid(xcoords, ycoords)).T.reshape(-1, 2)
     return pointscoords
 
 
-def get_points_grid(roi: gpd.GeoDataFrame) -> tuple[gpd.GeoSeries, gpd.GeoDataFrame]:
+def get_points_grid(roi: gpd.GeoDataFrame, spacing: int = 1000) -> tuple[gpd.GeoSeries, gpd.GeoDataFrame]:
     """Get points Grid Coordinates over a ROI"""
-    pointscoords = get_points_coords_roi(roi)
+    pointscoords = _get_points_coords_roi(roi, spacing)
     points_grid = gpd.points_from_xy(x = pointscoords[:,0], y = pointscoords[:,1])
     grid = gpd.GeoSeries(points_grid, crs=roi.crs)
     grid.name = 'geometry'
