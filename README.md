@@ -1,4 +1,7 @@
-![GEDI Logo](images/GEDI_logo.jpg " Global Ecosystem Dynamics Investigation")
+<p align="center">
+    <img src="images/GEDI_logo.jpg" height=180px >
+</p>
+
 
 This repo aims to <strong>extract GEDI LiDAR full waveforms</strong> in order to <strong>stack them</strong>. 
 Full waveforms are the <u>complete return signal of a laser pulse</u>. 
