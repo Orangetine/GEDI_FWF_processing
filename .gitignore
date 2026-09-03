@@ -10,6 +10,7 @@ __pycache__
 *.html
 *.tif
 *.png
+*.Identifier
 
 # GeoDataFrame GEDI shots
 GEDI0102_BA_GDF.geojson
