@@ -33,7 +33,7 @@ zrange_1m = compute_zrange(GEDI_012_BA_GDF, step=1, pct=(1,99))
 # I.e. a pixel of 1000 meters of resolution, but the more the shots the more you can increase the resolution => 900m, 800m, etc ...
 # If the grid cells are too small, some cells will be empty of shots, and will not aggregate waveform
  
-spacing = 700  
+spacing = 800  
 gridcells, gridcellsinside  = gprep.get_cells_grid(north_morroco_roi, spacing=spacing)
 
 
