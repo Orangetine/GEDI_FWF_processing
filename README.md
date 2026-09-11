@@ -13,11 +13,9 @@ They can also be informative of the <strong>nature of the ground</strong>, like 
 
 
 <p style="text-align:center;">
-    <a href="https://medium.com/@h.shaig93/lidar-full-waveform-gentle-introduction-fb566c005fa7" target="_blank">
-        <img src="images/differences-between-discrete-and-full-waveform-LiDAR-systems.png" alt="Difference between discrete and FWF LiDAR systems">
-    </a>
-    <figcaption style="text-align:center;">
+    <img src="images/differences-between-discrete-and-full-waveform-LiDAR-systems.png" alt="Difference between discrete and FWF LiDAR systems">
+    <!-- <figcaption style="text-align:center;">
          Differences between discrete and FWF LiDAR systems 
-    </figcaption>
+    </figcaption> -->
 </p>
 
