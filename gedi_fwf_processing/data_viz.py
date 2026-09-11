@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 from IPython.display import display
 from geoviews import tile_sources as gvts
 
-gv.extension('bokeh', 'matplotlib')
+gv.extension('bokeh', 'matplotlib', inline=True)
 
 from collections.abc import Iterable
 from gedi_fwf_processing.data_prep import extract_waveform, compute_relative_height, extract_FWF_from_shot_number
