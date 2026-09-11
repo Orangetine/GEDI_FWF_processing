@@ -11,3 +11,13 @@ LiDAR with full waveforms recorders permits to <i>record the entire signal retur
 These returned signals, named <strong>full waveforms</strong> are informative of the <strong>ground geometry</strong>, such as <i>slopes and escarpments</i>. 
 They can also be informative of the <strong>nature of the ground</strong>, like <i>dense vegetation or bare ground</i>. 
 
+
+<figure>
+    <a href="https://medium.com/@h.shaig93/lidar-full-waveform-gentle-introduction-fb566c005fa7" target="_blank">
+        <img src="images/differences-between-discrete-and-full-waveform-LiDAR-systems.png" alt="Difference between discrete and FWF LiDAR systems">
+    </a>
+    <figcaption style="text-align:center">
+         Differences between discrete and FWF LiDAR systems 
+    </figcaption>
+</figure>
+
