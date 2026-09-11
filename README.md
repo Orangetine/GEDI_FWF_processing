@@ -12,10 +12,7 @@ These returned signals, named <strong>full waveforms</strong> are informative of
 They can also be informative of the <strong>nature of the ground</strong>, like <i>dense vegetation or bare ground</i>. 
 
 
-<p style="text-align:center;">
+<p>
     <img src="images/differences-between-discrete-and-full-waveform-LiDAR-systems.png" alt="Difference between discrete and FWF LiDAR systems">
-    <!-- <figcaption style="text-align:center;">
-         Differences between discrete and FWF LiDAR systems 
-    </figcaption> -->
 </p>
 
