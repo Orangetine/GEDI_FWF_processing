@@ -133,7 +133,7 @@ When the **pixel is red**, the corresponding waveform has a unique echo, meaning
 
 <hr>
 
-The third script ([color_composite_fwf_main](gedi_fwf_processing/colored_composite_fwf_main.py)) computes waveform statistics (mean, max, median, std) to create a color composition of the scene by putting the maximum of the waveform in the red channel, the mean of the waveform in the blue channel, and the standard deviation of the waveform in the green channel.
+The third script ([color_composite_fwf_main](gedi_fwf_processing/colored_composite_fwf_main.py)) computes waveform statistics (mean, max, median, std) to create a color composition of the scene by putting the maximum of the waveform in the red channel, the mean of the waveform in the green channel, and the standard deviation of the waveform in the blue channel.
 
 <p align="center">
     <img src="images/color_composite.png">
