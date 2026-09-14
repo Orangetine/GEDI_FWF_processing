@@ -9,7 +9,7 @@ __pycache__
 *.gpkg
 *.html
 *.tif
-*.png
+
 *.Identifier
 
 # GeoDataFrame GEDI shots
