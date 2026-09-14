@@ -116,7 +116,7 @@ When the **pixel is red**, the corresponding waveform has a unique echo, meaning
 <p align="center">
     <img src="images/fwf_of_green_pixel.png" width=230px>
     <img src="images/green_pixel.png" width=190>
-    <img src="images/green_pixel_ground_truth.png" width=190px>
+    <img src="images/green_pixel_ground_truth.png" width=190px> <br>
     <small>
         Full waveform of a green pixel 
     </small>
@@ -125,7 +125,7 @@ When the **pixel is red**, the corresponding waveform has a unique echo, meaning
 <p align="center">
     <img src="images/fwf_of_red_pixel.png" width=230px>
     <img src="images/red_pixel.png" width=190>
-    <img src="images/red_pixel_ground_truth.png" width=190px>
+    <img src="images/red_pixel_ground_truth.png" width=190px> <br>
     <small>
         Full waveform of a red pixel 
     </small>
